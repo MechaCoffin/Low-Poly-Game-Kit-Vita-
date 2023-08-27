@@ -267,7 +267,7 @@ public class PlayerController : MonoBehaviour
         if (!IsDead && mIsControlEnabled)
         {
             // Interact with the item
-            if (mInteractItem != null && Input.GetKeyDown(KeyCode.F))
+            if (mInteractItem != null && Input.GetButton("Fire1"))
             {
                 // Interact animation
                 mInteractItem.OnInteractAnimation(_animator);
